@@ -1,0 +1,121 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    gap: 0.5em;
+}
+
+#new-task-input, #task-date, #task-priority, #add-task-button {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#add-task-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-task-button:hover {
+    background-color: #0056b3;
+}
+
+.filter-container {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #0056b3;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#task-list li {
+    background: #e3f2fd;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#task-list li .task-info {
+    flex-grow: 1;
+}
+
+#task-list li .task-info span {
+    display: block;
+}
+
+#task-list li .edit-button, #task-list li .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#task-list li .edit-button {
+    color: #28a745;
+}
+
+#task-list li .edit-button:hover {
+    color: #218838;
+}
+
+#task-list li .delete-button {
+    color: #e74c3c;
+}
+
+#task-list li .delete-button:hover {
+    color: #c0392b;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
